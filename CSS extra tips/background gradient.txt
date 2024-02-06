@@ -1,0 +1,38 @@
+                                    GRADIENT
+                                Linear Gradients
+
+1. Basic Linear Gradient:
+background: linear-gradient(to right, #ff0000, #0000ff);
+
+2. Angles Instead of Keywords:
+background: linear-gradient(45deg, #ff0000, #0000ff);
+
+3. Multiple Color Stops:
+background: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+
+4. Repeating Linear Gradient:
+background: repeating-linear-gradient(to right, #ff0000, #0000ff 20%, #00ff00 20%, #00ff00 40%);
+
+                                Radial Gradients
+
+5. Basic Radial Gradient:
+background: radial-gradient(circle, #ff0000, #0000ff);
+
+6. Different Shapes:
+background: radial-gradient(ellipse, #ff0000, #0000ff);
+
+7. Position and Shape:
+background: radial-gradient(50% 50%, circle, #ff0000, #0000ff);
+
+8. Repeating Radial Gradient:
+background: repeating-radial-gradient(circle, #ff0000, #0000ff 10%, #00ff00 10%, #00ff00 20%);
+
+                                Multiple Backgrounds:
+
+9. Multiple Gradients:
+background: linear-gradient(to right, #ff0000, #0000ff),
+  radial-gradient(circle, #00ff00, #ffff00);
+
+10. Multiple Backgrounds with Images:
+background: linear-gradient(to right, #ff0000, #0000ff),
+  url('image.jpg') center/cover;

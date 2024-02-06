@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 50vh;
+  background-color: skyblue;
+}
+
+section {
+  height: 20hv;
+  background-color: crimson;
+}
+
+article {
+  height: 30vh;
+  background-color: teal;
+}
+
+footer {
+  height: 100vh;
+  background-color: blanchedalmond;
+}/*# sourceMappingURL=index.css.map */

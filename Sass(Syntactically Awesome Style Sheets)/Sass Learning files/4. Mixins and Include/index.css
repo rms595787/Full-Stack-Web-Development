@@ -1,0 +1,17 @@
+.lm-btn {
+  background-color: teal;
+  color: white;
+  border: 1px solid teal;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.d-btn {
+  background-color: teal;
+  color: white;
+  border: 1px solid teal;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: crimson;
+  border: 1px solid crimson;
+}/*# sourceMappingURL=index.css.map */

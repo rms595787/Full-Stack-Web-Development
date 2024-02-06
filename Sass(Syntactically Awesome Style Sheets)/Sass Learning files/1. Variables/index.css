@@ -1,0 +1,15 @@
+/*
+    NOTE
+We create variable using '$' symbol and follow identifier rules
+*/
+body {
+  background-color: teal;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  height: 20vh;
+  width: 100vw;
+  background-color: red;
+}/*# sourceMappingURL=index.css.map */

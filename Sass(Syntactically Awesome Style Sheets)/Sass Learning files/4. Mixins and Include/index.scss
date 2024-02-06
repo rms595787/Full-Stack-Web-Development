@@ -1,0 +1,18 @@
+$color: teal;
+@mixin button-styles{
+    background-color: $color;
+    color: white;
+    border: 1px solid $color;
+    border-radius:10px;
+    padding: 10px 20px;
+}
+
+.lm-btn{
+    @include button-styles;
+}
+.d-btn{
+    @include button-styles;
+    // You can also change properties of mixin according to your need
+    background-color: crimson;
+    border: 1px solid crimson;
+}

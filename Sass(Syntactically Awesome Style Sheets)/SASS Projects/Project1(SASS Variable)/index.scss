@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+$main-color:#c8deff;
+$bg-image-center:no-repeat center/cover;
+$main-font:'Roboto', sans-serif;
+
+body{
+    height: 100vh;
+    background: linear-gradient(#a5aae9cc,#8c9af6);
+    
+    // Linear Gradient
+    // Basic LInear Gradient
+    // background: linear-gradient(to right, #ff0000, #0000ff,#a5aae9cc,#8c9af6);
+    // background: linear-gradient(to right top, #ff0000, #0000ff,#a5aae9cc,#8c9af6);
+    
+    // Angles Instead of Keywords
+    // background: linear-gradient(45deg, #ff0000, #0000ff,#a5aae9cc,#8c9af6);
+    
+    // Multiple Color Stops
+    // background: linear-gradient(to right, #0084ff4b, #0827b3, #0000ff);
+
+    // Repeating Linear Gradient
+    // background: repeating-linear-gradient(to right, #ff0000, #0000ff 20%, #00ff00 20%, #eeff00 40%);
+
+    // Radial Gradient
+    // Basic Radial Gradient
+    // background: radial-gradient(circle, #ff0000, #0000ff); 
+
+    // Different Shapes;
+    // background: radial-gradient(ellipse, #ff0000, #0000ff);
+    // background: radial-gradient(ellipse 50% 20%, #ff0000, #0000ff);
+
+    // Position and Shape;
+    // background: radial-gradient(50% 50%, circle, #ff0000, #0000ff);
+
+    // Repeating Radial Gradient
+    // background: repeating-radial-gradient(circle, #ff0000, #0000ff 10%, #00ff00 10%, #00ff00 20%);
+
+    // Multiple Backgrounds
+    // Multiple Gradients
+    // background: linear-gradient(to right, #ff0000, #0000ff), radial-gradient(circle, #00ff00, #ffff00);
+
+    // Multiple Backgrounds with Images
+    // background: linear-gradient(to right, #ff0000, #0000ff),url('Images/one.jpg') center/cover;
+
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: $main-font;
+}
+
+.card{
+    background: $main-color;
+    max-width: 280px;
+    padding: 20px;
+    line-height: 24px;
+    margin: 4rem;
+    position: relative;
+}
+
+.img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: 5px solid white;
+    position: absolute;
+    right: -30px;
+    bottom: 110px;
+}
+
+.img-one{
+    background: url("Images/one.jpg") $bg-image-center;
+
+}
+.img-two{
+    background: url("Images/two.jpg") $bg-image-center;
+}
+
+.img-three{
+    background: url("Images/three.jpg") $bg-image-center;
+}
+
+.img-four{
+    background: url("Images/four.jpg") $bg-image-center;
+}
