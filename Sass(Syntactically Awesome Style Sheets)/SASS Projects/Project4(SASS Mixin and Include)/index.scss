@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin button-style{
+background-color: #141414;
+color: white;
+padding: 10px 20px;
+border-radius: 100px;
+width: 140px;
+font-weight: bold;
+cursor: pointer;
+}
+
+@mixin card-basic-styles{
+    width: 300px;
+    padding:20px;
+    background:linear-gradient(to  bottom,#ec4bd2, #eb4bd05d);
+    border-radius: 10px;
+    color: white;
+}
+
+@mixin card-content-styles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+    height: 70%;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    @include card-basic-styles;
+    margin: 10px;
+    .card-content{
+        @include card-content-styles;
+        .price{
+            font-size: 3rem;
+            span{
+                font-size: 1.4rem
+            }
+        }
+        .card-name{
+            font-size: 2rem;
+        }
+        .card-info{
+            font-size: 14px;
+            padding: 0 20px;
+            line-height: 1.4; 
+        }
+        button{
+            @include button-style;
+        }
+    }
+}
+
+.card-two{
+    background: linear-gradient(to bottom, #2cdb60, #69c5085d);
+}
+
+.card-three{
+    background: linear-gradient(to bottom, #060da35d,#4ba1ec);
+}

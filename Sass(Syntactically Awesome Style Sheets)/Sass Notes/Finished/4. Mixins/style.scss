@@ -53,6 +53,7 @@
       span {
         font-size: 1.4rem;
       }
+    }
 
       .card-name {
         font-size: 2rem;
@@ -63,7 +64,6 @@
         padding: 0 20px;
         line-height: 1.4;
       }
-    }
     button {
       @include button-styles;
     }

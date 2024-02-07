@@ -35,10 +35,10 @@
 .card .card-content .price span {
   font-size: 1.4rem;
 }
-.card .card-content .price .card-name {
+.card .card-content .card-name {
   font-size: 2rem;
 }
-.card .card-content .price .card-info {
+.card .card-content .card-info {
   font-size: 14px;
   padding: 0 20px;
   line-height: 1.4;
