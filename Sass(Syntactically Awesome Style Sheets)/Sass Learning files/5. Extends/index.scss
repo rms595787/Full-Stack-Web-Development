@@ -1,0 +1,17 @@
+.btn{
+    background-color: crimson;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.download{
+    @extend .btn;
+    border: 2px solid black;
+}
+
+.black-btn{
+    @extend .btn;
+    border-radius: 10px;
+}

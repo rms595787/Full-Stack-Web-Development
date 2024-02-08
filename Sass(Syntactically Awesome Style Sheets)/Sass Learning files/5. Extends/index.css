@@ -1,1 +1,15 @@
-/*# sourceMappingURL=index.css.map */
+.btn, .black-btn, .download {
+  background-color: crimson;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.download {
+  border: 2px solid black;
+}
+
+.black-btn {
+  border-radius: 10px;
+}/*# sourceMappingURL=index.css.map */
