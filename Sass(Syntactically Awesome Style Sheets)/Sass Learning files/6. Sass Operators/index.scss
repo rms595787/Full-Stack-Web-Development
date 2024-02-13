@@ -1,0 +1,31 @@
+.selector{
+    // // Equality Operators
+    // padding: 10px==10px;
+    // padding: 10px==10em;
+    // padding: 10px==20px;
+    // font-family: 'arial'==arial;
+
+    // // Relational Operators
+    // padding: 10px>30px;
+    // padding: 10px<=30px;
+    // padding: 10px>30px;
+    // padding: 10px<=30px;
+
+    // // Boolean Operators
+    // padding: arial=='arial' and 10px==10px;
+    // padding: arial=='arial' and 10px==10;
+    // padding: arial=='arial' and 10px==20px;
+    // padding: arial=='roboto' and 10px==20px;
+
+    // // or Operator
+    // padding: arial=='arial' or 10px==20px;
+    // padding: arial=='playfair' or 10px==20px;
+    
+    // not Operator
+    padding: not (10px==20px);
+    padding: not (10px==10px);
+
+
+
+
+}

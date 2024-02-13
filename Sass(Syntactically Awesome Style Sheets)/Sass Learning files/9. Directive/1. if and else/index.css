@@ -1,0 +1,16 @@
+/*   SYNTAX
+if condition{
+    code
+}
+else if condition{
+    code
+}
+else{
+    code
+}
+*/
+.section {
+  width: 55px;
+  height: 55px;
+  color: crimson;
+}/*# sourceMappingURL=index.css.map */

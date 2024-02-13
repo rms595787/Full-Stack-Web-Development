@@ -1,0 +1,124 @@
+.selector {
+    // // Built in Functions
+    // // Math Functions
+    // padding: max(10px,20px, 50px, 2px);
+    // padding: min(10px,20px, 50px, 2px);
+    // padding: random();
+    // padding: random(10);
+    // padding: unit(10px);
+    // padding: unitless(10px);
+    // // padding: unitless(10);
+
+    // // String Functions
+    // font-family: quote(arial);
+    // font-family: quote("arial");
+    // font-family: unquote("arial");
+    // font-family: to-upper-case("arial");
+    // font-family: to-lower-case("ARIAL");
+    // font-family: str-length("arial");
+    // font-family: str-index("arial","a");
+    // font-family: str-insert("arial","s",6); //Note here indexing starts from 1 to ...
+    // font-family: unique-id();
+
+    // // List
+    // $list:10px 20px 30px;
+
+    // padding:length($list);          // it will tell the length of the list
+    // padding:nth($list,2);           // it uses indexing and tells value accordingly(Note index starting from value 1)
+    // padding: set-nth($list,3,2em);  // it replaces value in the list
+    // padding: join((10px, 20px, 30px), (40px, 50px, 60px),comma);
+    // padding: join((10px, 20px, 30px), (40px, 50px, 60px),space);             // it joins two lists
+    // padding: append($list,40px);    // it adds value at the end of the list
+
+    // // Maps
+    // // A map is just a key and values
+
+    // $font-weight:(
+    //     "regular":400px,
+    //     'medium':500px,
+    //     'bold':700px
+    // );
+
+    // font-weight: map-get($font-weight,"medium");    // it takes the value from the map
+    // font-weight: map-keys($font-weight);    // it tells all keys present in map
+    // font-weight: map-values($font-weight);  // it tells all values present in map
+    // font-weight: map-has-key($font-weight, 'bold'); // it checks that key is present in map or not and return answer in boolean
+    // font-weight: map-has-key($font-weight, 'rahul');
+
+}
+
+section {
+
+    // Creating Custom Functions
+
+    // // Example 1
+    // $one:100;
+    // $two:100;
+
+    // // Declaring function
+    // @function add($numberOne,$numberTwo){
+    //     @return $numberOne+$numberTwo;
+    // }
+
+    // // Calling function
+    // width: add(10,40);
+
+    // // Example 2
+    // @function randomColor() {
+    //     @return rgb(random(255), random(255), random(255));
+    // }
+
+    // width: 100px;
+    // height: 100px;
+    // background-color: randomColor();
+
+    // Example 3
+
+    $one: 100px;
+    $two: 4px;
+
+    @function math($operator, $numberOne, $numberTwo) {
+        @if $operator=="add" {
+            @return $numberOne+$numberTwo;
+        }
+
+        @if $operator=="subtract" {
+            @return $numberOne-$numberTwo;
+        }
+
+        @if $operator=="multiply" {
+            @return $numberOne*$numberTwo;
+        }
+
+        @if $operator=="divide" {
+            @return $numberOne/$numberTwo;
+        }
+    }
+
+    background: teal;
+    // // ADD
+    // width: math('add',$one,$two);
+    
+    // SUBTRACT
+    // width: math('subtract',$one,$two);
+    
+    // // MULTIPLY
+    // // Note in case of multiplication we cannot take both values to be px we have to take one value with unit and another without unit(e.g.- $one= 100px, $two=4)
+    // width: math('multiply',$one,$two);
+    // // DIVIDE
+    // width: math('divide',$one,$two);
+}
+    // .container{
+    //     // Color Functions
+    //     $initial-color: blue;
+    //     $color-for-saturation: red;
+    //     width: 600px;
+    //     height: 200px;
+    //     background: darken($initial-color,40);
+    //     background: lighten($initial-color,40);
+    //     background: lighten($initial-color,40);
+    //     background: adjust-hue($initial-color,40);
+    //     background: saturate($color-for-saturation,40);
+    //     background: mix($initial-color,$color-for-saturation);
+    //     background: mix($initial-color,$color-for-saturation);
+    // }

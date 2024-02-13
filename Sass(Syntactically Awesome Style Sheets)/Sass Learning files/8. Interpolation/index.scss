@@ -1,0 +1,24 @@
+$one:red;
+$two:blue;
+$three:green;
+
+li{
+    width: 100px;
+    height: 100px;
+    list-style-type: none;
+    text-align: center;
+    margin: 5px;
+}
+
+// Syntax to write interpolation #{}
+.#{one}{
+    background-color: $one;
+}
+
+.#{two}{
+    background-color: $two;
+}
+
+.#{three}{
+    background-color: $three;
+}

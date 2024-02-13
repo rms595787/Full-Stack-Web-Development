@@ -1,0 +1,50 @@
+// Simple
+
+
+// @each $i in (normal, bold, italic) {
+//     .#{$i} {
+//         font-weight: $i;
+//     }
+// }
+
+// $list:(normal,bold,italic);
+// @each $i in $list{
+//     .#{$i}{
+//         font-weight: $i;
+//     }
+// }
+
+// $list:(10,20,30);
+// @each $i in $list{
+//     .selector{
+//         font-weight: $i;
+//     }
+// }
+
+// // Multidimensional List
+
+// $list: ((normal,bold,10px),(emphasis,italic,20px));
+
+// @each $name, $style, $size in $list{
+//     .#{$name}{
+//         font-weight: $style;
+//         font-size: $size;
+//     }
+// }
+
+$colors:yellow orange red crimson;
+
+@each $color in $colors{
+    .#{$color}{
+        background: $color;
+    }
+}
+
+body{
+    display: flex;
+}
+
+div{
+    flex: 1 1 auto;
+    height: 100vh;
+}
