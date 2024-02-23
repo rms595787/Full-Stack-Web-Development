@@ -1,4 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+.frame-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.frame-container .gradient {
+  width: 72%;
+  height: 76%;
+  position: absolute;
+  bottom: 74px;
+  background: linear-gradient(to left, #35d08f, #e32e64);
+  border-radius: 10px;
+}
+.frame-container header {
+  width: 95.5%;
+  height: 91%;
+  margin-top: 2rem;
+  background-image: url("/SASS Projects/Project6(SASS Portfolio Project)/Images/simon-de-vries-UQluWXKUn7A-unsplash.jpg");
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -320px;
+  margin: 20px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 700px) {
+  .frame-container header {
+    background-position: center;
+  }
+}
+.frame-container header .social {
+  height: 100%;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  margin: 10px;
+  text-align: center;
+}
+.frame-container header .social .fa-brands {
+  margin-bottom: 10px;
+}
+.frame-container header .social .line {
+  margin: 0 auto;
+  width: 4px;
+  border-radius: 10px;
+  height: 20%;
+  background: #ae81bf;
+  margin-bottom: 20px;
+}
+.frame-container header h1 {
+  margin-left: 50px;
+  color: white;
+  font-size: 5rem;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: normal;
+  transform: translateY(-50px);
+}
+
+.container {
+  height: 50vh;
+  background: linear-gradient(to right, #4f2d62, #ac39ea);
+}
+.container nav {
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Roboto", sans-serif;
+}
+.container nav ul {
+  margin-right: 40px;
+  margin-top: 20px;
+}
+.container nav ul li {
+  display: inline;
+  list-style: none;
+  margin-left: 30px;
+}
+.container nav ul a {
+  text-decoration: none;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background: #211f22;
 }/*# sourceMappingURL=style.css.map */

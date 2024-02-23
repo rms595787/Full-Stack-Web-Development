@@ -1,6 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'); 
 
 // 'Roboto',sans-serif
+
+@import "components/about";
+@import "components/footer";
+@import "components/header";
+@import "components/nav";
+@import "components/projects";
+@import "components/resets";
+@import "components/reviews";
+@import "components/variables";
 
 body{
     background:#211f22;
