@@ -3,7 +3,7 @@
 ### Sass keeps the CSS code DRY (Don't Repeat Yourself). One way to write DRY code is to keep related code in separate files. You can create small files with CSS snippets to include in other Sass files. Examples of such files can be: reset file, variables, colors, fonts, font-sizes, etc.
 
 ### 👇 The @import directive allows you to include the content of one file in another.
-### 👇 EX - import "_body.scss";
+### 👇 EX - @import "_body.scss";
 
 ### 👇 To create partials/snippets for scss we need to create name of file starting with '_' (underscore)
 ### 👇 EX - _body.scss, _header.scss, etc.
