@@ -1,3 +1,6 @@
+CSS - Cascade Style Sheet
+Cascade means - A waterfall or a series of small waterfalls over steep rocks.
+
                                     GRADIENT
                                 Linear Gradients
 
