@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgrounds and Shadows</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <style>
+        body{
+            background-color: #ffebcd;
+        }
+    </style> -->
+</head>
+<body class="bg-[white] p-5">
+    <!-- Background Images -->
+    <!-- https://tailwindcss.com/docs/background-image -->
+    <div class="h-screen w-full bg-blue-500 bg-cover bg-no-repeat bg-center" style="background-image: url('https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80');"></div>
+
+    <!-- Shadows -->
+    <!-- https://tailwindcss.com/docs/drop-shadow -->
+    <div class="flex flex-wrap">
+        <div class="w-[400px] mt-10 ml-7 shadow-sm bg-white">Shadow Small</div>
+        <div class="w-[400px] mt-10 ml-7 shadow-md bg-white">Shadow Medium</div>
+        <div class="w-[400px] mt-10 ml-7 shadow-lg bg-white">Shadow large</div>
+        <div class="w-[400px] mt-10 ml-7 shadow-xl bg-white">Shadow extra large(xl)</div>
+        <div class="w-[400px] mt-10 ml-7 drop-shadow-2xl bg-white">Shadow 2xl</div>
+        <div class="w-[400px] mt-10 ml-7 shadow-inner bg-white">Shadow inner</div>
+        
+        <!-- Shadows/Colored -->
+        <div class="w-[400px] mt-10 ml-7 shadow-lg bg-white shadow-teal-500">Shadow large</div>
+        <div class="w-[400px] mt-10 ml-7 drop-shadow-2xl bg-white shadow-teal-500">Shadow 2xl</div>
+        <div class="w-[400px] mt-10 ml-7 shadow-inner bg-white shadow-teal-500/40">Shadow inner</div>
+        <!-- Note -->
+         <!-- if you give color like this then you can give color and opacity
+                shadow-teal-500/40
+                500 denotes the color shade
+                40 denotes the opacity of the color -->
+    </div>
+
+    <!-- Gradients -->
+    <!-- https://tailwindcss.com/docs/gradient-color-stops#basic-usage -->
+
+    <div class="h-40 mt-10 bg-gradient-to-r from-teal-100 to-green-500 text-center p-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sapiente culpa aliquam placeat, perspiciatis praesentium necessitatibus dicta ullam deserunt ipsum id officia est possimus distinctio odio? Impedit exercitationem officiis deleniti.</div>
+
+    <div class="h-40 mt-10 bg-gradient-to-r from-cyan-300 via-blue-500 to-purple-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem esse repellendus accusamus magnam quo quas molestiae id quod autem, voluptates iste dolorum expedita obcaecati fuga repudiandae deserunt, adipisci aut ex?</div>
+
+
+</body>
+</html>
