@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* NOTES */
+
+/*
+What is @layers?
+The @layer directive helps you control declaration order by automatically relocating your styles to the corresponding @tailwind directive, and also enables features like modifiers and tree-shaking for your own custom CSS.
+
+For more power, you can also use the @layer directive to add styles to Tailwind’s base, components, and utilities layers:
+
+
+
+base - The base layer is for things like reset rules or default styles applied to plain HTML elements.
+
+components - The components layer is for class-based styles that you want to be able to override with utilities.
+
+utilities - The utilities layer is for small, single-purpose classes that should always take precedence over any other styles.
+
+*/
+
+@layer base{
+    a{
+        @apply text-green-400 underline;
+    }
+}
+
+@layer components{
+    .menu-components{
+        @apply text-white bg-indigo-500 p-3 mt-5;
+    }
+}
+
+@layer utilities{
+    .text-green-500{
+        color:blue;
+    }
+}

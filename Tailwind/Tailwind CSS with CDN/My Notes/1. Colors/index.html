@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>
+    <Script src="https://cdn.tailwindcss.com"></Script>
+    <style>
+        body{
+            padding: 5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Link is below -->
+    
+    <!-- 1. Colors with different shades -->
+    <!-- https://tailwindcss.com/docs/customizing-colors -->
+
+    <!-- syntax of class-> text-color-opacity -->
+    <h1>1. Color With Different Shades</h1>
+    <p class="text-green-50">Tailwind</p>
+    <p class="text-green-100">Tailwind</p>
+    <p class="text-green-200">Tailwind</p>
+    <p class="text-green-300">Tailwind</p>
+    <p class="text-green-400">Tailwind</p>
+    <p class="text-green-500">Tailwind</p>
+    <p class="text-green-600">Tailwind</p>
+    <p class="text-green-700">Tailwind</p>
+    <p class="text-green-800">Tailwind</p>
+    <p class="text-green-900">Tailwind</p>
+    <p class="text-green-950">Tailwind</p>
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- 2. Background Colors -->
+    <!-- https://tailwindcss.com/docs/background-color -->
+
+    <!-- syntax of class-> bg-color-opacity/shade -->
+    <h1>2. Background</h1>
+    <p class="bg-pink-400">Tailwind</p>
+    <p class="bg-red-400 text-white">Tailwind</p>
+    <p class="bg-blue-400 text-white">Tailwind</p>
+
+    <br>
+    <hr>
+    <br>
+    
+    <!-- 3. Text Decoration -->
+    <!-- https://tailwindcss.com/docs/text-decoration-color -->
+    
+    <!-- syntax of class->type of line decoration-color-opacity/shade  -->
+    <h1>3. Text Decoration</h1>
+    <p class="line-through">Tailwind</p>
+    <p class="underline">Tailwind</p>
+    <p class="underline decoration-blue-400">Tailwind</p>
+    <p class="overline">Tailwind</p>
+    <p class="overline decoration-emerald-400">Tailwind</p>
+    <p class="text-purple-600 underline decoration-purple-400">Tailwind</p>
+    
+    <br>
+    <hr>
+    <br>
+    
+    <!-- 4. Accent Colors -->
+    <!-- https://tailwindcss.com/docs/accent-color -->
+    
+    <!-- syntax of class->accent-color-opacity/shades  -->
+    <h1>4. Accent Colors</h1>
+    <input type="checkbox" checked>Default
+    <br>
+    <input type="checkbox" class="accent-red-500" checked>Tailwind
+    <br>
+    <input type="checkbox" class="accent-yellow-500" checked>Tailwind
+    
+    <br>
+    <hr>
+    <br>
+
+    <!-- 5. Arbitrary Colors -->
+    <!-- syntax of class->type(bg, border, text)-color[#fff] h-10(height of the div is set to 10px) -->
+
+    <h1>5. Arbitrary Colors</h1>
+    <div class="bg-[#c0c0c0] h-10">Hello</div>
+    <div class="text-[#ff0cd0] h-10">Hello</div>
+    <div class="border border-[#ccc000] h-10">Hello</div>
+</body>
+</html>

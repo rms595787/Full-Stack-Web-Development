@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container Spacing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-red-500">Tailwind Testing</h1>
+
+    <!-- Margin -->
+    <!-- https://tailwindcss.com/docs/margin -->
+    <h3>1.Margin</h3>
+    <div class="m-2 bg-yellow-100">Margin All Around</div>
+    <div class="mx-px bg-yellow-200">Margin for X axis(left and right)</div>
+    <div class="my-2 bg-yellow-300">Margin for Y axis(top and bottom)</div>
+    <div class="ms-2 bg-yellow-400">Margin for start</div>
+    <div class="me-2 bg-yellow-500">Margin for end</div>
+    <div class="mt-2 bg-yellow-600">Margin for top</div>
+    <div class="mb-2 bg-yellow-700">Margin for bottom</div>
+    <div class="ml-2 bg-yellow-800">Margin for left</div>
+    <div class="mr-2 bg-yellow-900">Margin for right</div>
+    <!--
+        NOTE
+        In case we are providing margin in tailwind if we want to provide it in px then
+        1. only you can provide 1px with px unit else you have to provide in rem which is eventualy equal to px
+        
+        syntax - "m-px"   ->(for 1px)
+        
+        example - 0.5rem = 2px, 1rem = 4px
+        syntax - "m-0.5"    ->(for 0.5rem)
+    -->
+    
+    
+    <!-- Arbitrary Spacing -->
+    <!-- https://tailwindcss.com/docs/border-spacing#arbitrary-values -->
+    <div class="m-[100px] bg-purple-500">2.Margin All Around</div>
+    
+    <!-- Padding -->
+    <h3>3.Padding</h3>
+    <div class="p-2 bg-lime-100">Padding All Around</div>
+    <div class="px-px bg-lime-200">Padding for X axis(left and right)</div>
+    <div class="py-2 bg-lime-300">Padding for Y axis(top and bottom)</div>
+    <div class="ps-2 bg-lime-400">Padding for start</div>
+    <div class="pe-2 bg-lime-500">Padding for end</div>
+    <div class="pt-2 bg-lime-600">Padding for top</div>
+    <div class="pb-2 bg-lime-700">Padding for bottom</div>
+    <div class="pl-[50px] bg-lime-800">Padding for left</div>
+    <div class="pr-2 bg-lime-900">Padding for right</div>
+    
+    
+    <!-- Space Between X and Y-->
+    <!-- https://tailwindcss.com/docs/space -->
+    <br>
+    <h3 class="bg-slate-200">4.Space Between X and Y</h3>
+    <br>
+    <h3>Space Between X</h3>
+    <div class="flex space-x-4">
+        <div class="p-3 bg-teal-100">01</div>
+        <div class="p-3 bg-teal-200">02</div>
+        <div class="p-3 bg-teal-300">03</div>
+    </div>
+    
+    <br>
+    <h3>Space Between Y</h3>
+    <div class="flex flex-col space-y-4">
+        <div class="p-3 bg-teal-100">01</div>
+        <div class="p-3 bg-teal-200">02</div>
+        <div class="p-3 bg-teal-300">03</div>
+    </div>
+    <!--  -->
+</body>
+</html>
