@@ -9,16 +9,33 @@
 let firstName = 'Rahul ';
 let lastName = 'Sharma';
 
-// Different ways of Concatenating Strings
+// Different Strings Operations
 
 // 1. Concatenation
+console.log("Performing Concatenation Operation");
 console.log(firstName + lastName);
 
-// 2. Concatenation
+// Or
+
+// Concatenation
 console.log(firstName.concat(lastName));
 
-// 3. Append
-
+// 2. Append
+console.log("Performing Concatenation Append");
 // firstName += "is something else"
 firstName += lastName;
 console.log(firstName);
+
+// 3. Length
+console.log("Performing Length Operation");
+console.log(firstName);
+
+// 4. Cases
+console.log("Performing Case Operation");
+console.log("Lower Case",firstName.toLowerCase());
+console.log("Upper Case",firstName.toUpperCase());
+
+// 5. Slice
+console.log(firstName.slice(0,1));
+console.log(firstName.slice(0,3));
+console.log(firstName.slice(0,));
