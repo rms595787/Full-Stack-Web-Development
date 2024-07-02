@@ -33,14 +33,12 @@ else{
 */
 
 // 2nd example
-let time=50;
+let time = 50;
 
-if(time<10){
-    console.log("Good Morning");
-}
-else if(time<20){
-    console.log("Good Day");
-}
-else{
-    console.log("Good Evening");
+if (time < 10) {
+  console.log("Good Morning");
+} else if (time < 20) {
+  console.log("Good Day");
+} else {
+  console.log("Good Evening");
 }

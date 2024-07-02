@@ -40,29 +40,29 @@ switch(x){
 // 2nd example
 let day = "Saturday";
 
-switch(day){
-    case "Monday":
+switch (day) {
+  case "Monday":
     console.log("Today is Monday");
     break;
-    case "Tuesday":
+  case "Tuesday":
     console.log("Today is Tuesday");
     break;
-    case "Wednesday":
+  case "Wednesday":
     console.log("Today is Wednesday");
     break;
-    case "Thursday":
+  case "Thursday":
     console.log("Today is Thursday");
     break;
-    case "Friday":
+  case "Friday":
     console.log("Today is Friday");
     break;
-    case "Saturday":
+  case "Saturday":
     console.log("Today is Saturday");
     break;
-    case "Sunday":
+  case "Sunday":
     console.log("Today is Sunday");
     break;
-    default:
+  default:
     console.log("Don't know what day is today!");
     break;
 }

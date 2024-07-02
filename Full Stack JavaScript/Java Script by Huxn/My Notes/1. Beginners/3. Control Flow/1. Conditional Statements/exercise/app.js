@@ -5,16 +5,13 @@
 // 5. If all fails print "Please provide a password."
 
 let password;
-password=8;
-if (password===8){
-    console.log("Welcome");
-}
-else if(password<8){
-    console.log("Password is too short");
-}
-else if(password>8){
-    console.log("Too Long Password & Password should be 8 characters");
-}
-else{
-    console.log("Please provide a password");
+password = 8;
+if (password === 8) {
+  console.log("Welcome");
+} else if (password < 8) {
+  console.log("Password is too short");
+} else if (password > 8) {
+  console.log("Too Long Password & Password should be 8 characters");
+} else {
+  console.log("Please provide a password");
 }
