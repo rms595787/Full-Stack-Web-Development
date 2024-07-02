@@ -27,21 +27,20 @@ money=Number(money);
 console.log("\nUsing constructor 'Number' for type conversion",money);
 console.log(typeof money);
 
+*/
 
-console.log("\nPerforming Type Conversion");
-console.log("\nString to Integer");
-money = parseInt(money);
-console.log(money);
-console.log(typeof money);
-
-console.log("\nInteger to float number");
+// Converting String to Decimal
+money  = "50.343";
 money = parseFloat(money);
 console.log(money);
 console.log(typeof money);
 
-*/
 
+/*
 // Converting Number to String
-money=money.toString();
+money=50;
+// money=money.toString();
+// money=String(money);
 console.log("\nUsing toString method for type conversion",money);
 console.log(typeof money);
+*/
