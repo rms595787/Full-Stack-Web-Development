@@ -38,4 +38,7 @@ console.log("Upper Case",firstName.toUpperCase());
 // 5. Slice
 console.log(firstName.slice(0,1));
 console.log(firstName.slice(0,3));
-console.log(firstName.slice(0,));
+console.log(firstName.slice(0,));   // to display complete string
+
+// Split & Join
+console.log(firstName.split());
