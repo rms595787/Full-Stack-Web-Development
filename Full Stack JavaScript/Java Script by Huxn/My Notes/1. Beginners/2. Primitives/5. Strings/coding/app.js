@@ -39,12 +39,6 @@ console.log("Upper Case",firstName.toUpperCase());
 console.log("\nPerforming Slice Operation");
 console.log(firstName.slice(0,1));
 console.log(firstName.slice(0,3));
-<<<<<<< HEAD
-console.log(firstName.slice(0,));   // to display complete string
-
-// Split & Join
-console.log(firstName.split());
-=======
 console.log(firstName.slice(0,));
 
 // 6. Split & Join
@@ -115,4 +109,3 @@ console.log(desc);
 desc =` ${firstName}
 ${lastName}`;
 console.log("\nUsing Variable inside string by using($) symbol\n",desc);
->>>>>>> dcbcd6cf5beac529f1d1ba667b36c5625c7541f2
