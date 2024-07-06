@@ -52,7 +52,7 @@ console.log(fruits.join());
 console.log(fruits.join("-"));
 // note -> defaultly it joins with commas
 
-// reverse - reverse an array
+// reverse() - reverse an array
 console.log("\nPerforming reverse operation -> it reverses the array");
 console.log(fruits);
 console.log(fruits.reverse());
