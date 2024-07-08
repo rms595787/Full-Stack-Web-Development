@@ -1,0 +1,11 @@
+{
+  "name": "Rahul Sharma",
+  "age": 20,
+  "email": "rms595787@gmail.com",
+  "isSubscribed": true,
+  "hobbies": ["Reading", "Running", "Cooking"],
+  "address": {
+    "city": "New York",
+    "idk": true
+  }
+}
