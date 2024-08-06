@@ -5,15 +5,29 @@
 //     property:Value;
 // }
 
-// 1. getElementsByTagName
+// 1. getElementsByTagName/nodeName
+
+// tagName -> only exists for element nodes
+// nodeName -> defined for any node(text, comment, etc.)
 
 // // IN CSS
 // h1,pre,p{
 //     code;
 // }
 
+// TagName
 // In JS
 console.log("getElementsByTagName\n", document.getElementsByTagName("h1"));
+
+// nodeName
+console.log(
+  "Acessing firstchild of the document's body\n",
+  document.body.firstChild.nodeName
+);
+console.log(
+  "Accessing the first element who is child of the document's body\n",
+  document.body.firstElementChild.nodeName
+);
 
 // 2. getElementsById
 
