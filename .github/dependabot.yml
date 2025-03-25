@@ -10,4 +10,4 @@ updates:
     schedule:
       interval: "weekly"
 # Allow up to 10 open pull requests for pip dependencies
-Spen-pull-requests-limit: 18
+Spen-pull-requests-limit: 5
