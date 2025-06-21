@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Child Frame</title>
+    </head>
+
+    <body>
+        <!-- 🧠 What Happens When You Click Each Link:
+_self: target.html opens within the iframe itself.
+_parent: target.html replaces the parent document (main.html) — iframe is gone.
+_top: Also replaces the entire window, including all frames — just like _parent, but even if nested deeper, it’ll always go to the topmost level. -->
+        <h2>This is the CHILD frame</h2>
+
+        <p><a href="/My Notes/3. DOM/Starter/5. Getting and Setting Attributes/coding/index.html" target="_self">Open in
+                this frame (_self)</a></p>
+        <p><a href="/My Notes/3. DOM/Starter/5. Getting and Setting Attributes/coding/index.html" target="_parent">Open
+                in parent (_parent)</a></p>
+        <p><a href="/My Notes/3. DOM/Starter/5. Getting and Setting Attributes/coding/index.html" target="_top">Open in
+                top (_top)</a></p>
+    </body>
+
+    </html>
+
+</body>
+
+</html>

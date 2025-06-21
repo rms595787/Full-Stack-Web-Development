@@ -20,7 +20,7 @@ console.log(stringArr[1]);
 console.log(stringArr[2]);
 console.log(stringArr[3]);
 
-console.clear();
+// console.clear();
 // Nested || 2D || 3D Array
 const nestedArr = ["one", "two", [1, 2, 3, 4, 5], "three"];
 console.log(nestedArr);

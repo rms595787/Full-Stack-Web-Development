@@ -28,7 +28,7 @@ console.log(firstName);
 
 // 3. Length
 console.log("\nPerforming Length Operation");
-console.log(firstName);
+console.log(firstName.length);
 
 // 4. Cases
 console.log("\nPerforming Case Operation");

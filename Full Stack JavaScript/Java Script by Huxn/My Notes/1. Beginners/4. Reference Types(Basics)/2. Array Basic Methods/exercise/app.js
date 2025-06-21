@@ -6,7 +6,7 @@
 // shift() removes the first element of an array and returns the removed element
 // sort() sorts the elements alphabetically in strings and in ascending order
 // slice() selects the part of an array and returns the new array
-// splice() removes or replaces existing elements and/or adds new elements
+// splice() The splice method changes an array by adding, removing, or replacing elements and returns the removed items.
 
 const arr1 = [5, 4, 1, 3, 2];
 const arr2 = ["one", "two", "three"];
@@ -45,6 +45,7 @@ console.log(arr1);
 console.log(arr1.slice(1, 3));
 
 console.log("\nPerforming splice() operation");
+console.log(arr1);
 console.log(arr1.splice(2, 3));
 console.log(arr1.splice(1, 3, "replaced value"));
 console.log(arr1);

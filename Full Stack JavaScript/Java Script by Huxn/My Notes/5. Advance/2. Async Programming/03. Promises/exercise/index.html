@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Exercise</title>
+</head>
+
+<body>
+    <h1>Full Stack Java Script</h1>
+    <h2>Exercise Time</h2>
+    <h3>
+        <pre style="font-size: x-large; font-weight: bolder;">
+----------------------------------------------
+Refactor this code to use Promises
+console.log("Start");
+
+function getUserDataFromDB(name, callback) {
+  setTimeout(() => {
+    console.log("Getting User Name...");
+    callback(name);
+  }, 2000);
+}
+
+function getUserHobbies(name, callback) {
+  setTimeout(() => {
+    console.log("Getting user hobbies...");
+    callback(["Cricket", "Reading", "Dancing"]);
+  }, 2000);
+}
+
+getUserDataFromDB("HuXn", (data) => {
+  console.log(data);
+  getUserHobbies(data, (hobby) => {
+    console.log(hobby);
+  });
+});
+
+console.log("End");
+----------------------------------------------
+
+        </pre>
+    </h3>
+    <script src="/My Notes/5. Advance/2. Async Programming/03. Promises/exercise/app.js"></script>
+</body>
+
+</html>

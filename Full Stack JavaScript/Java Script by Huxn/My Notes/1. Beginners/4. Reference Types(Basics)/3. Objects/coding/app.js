@@ -38,7 +38,7 @@ console.log(person["location"]);
 console.log(person["isProgrammer"]);
 
 // important point
-// we cannot write like this while traversind data from object
+// we cannot write like this while traversing data from object
 // person[firstName]
 // because it takes as the value is present in global space means this variable is out of the class and part of main code
 
