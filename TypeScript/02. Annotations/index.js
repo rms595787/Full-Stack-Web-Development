@@ -1,3 +1,4 @@
+"use strict";
 /*
 Annotations
 Annotations are used to specify the data type of a variable, parameter, function return value, and other types
@@ -7,15 +8,15 @@ types of values can be assigned to a given variable or passed as an arguments to
 // Syntax for Annotations
 // let myVar:type = value
 // String
-var myName = "Rahul Sharma";
+let myName = "Rahul Sharma";
 myName = "Rahul";
 console.log(myName); // Rahul
 // Number
-var favNumber = 7;
+let favNumber = 7;
 favNumber += 2;
 console.log(favNumber); // 9
 // Boolean
-var isHard = false;
+let isHard = false;
 console.log(isHard); // false
 // NOTE - ERROR
 // number will throw error if you try to store string in that and vice-versa

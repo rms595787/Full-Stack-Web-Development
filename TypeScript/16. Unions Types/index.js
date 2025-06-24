@@ -1,3 +1,4 @@
+"use strict";
 /*
 
 Unions Types
@@ -28,11 +29,11 @@ interface MyInterface{
 }
 */
 // Union Type with variable
-var password = 20;
+let password = 20;
 console.log(password);
 password = "hello";
 console.log(password);
-var user = {
+let user = {
     // Using UserInfo separately
     // first:"Rahul",
     // last:"Sharma",
@@ -43,5 +44,5 @@ var user = {
 };
 console.log(user);
 // Union type with array
-var items = [1, 5, 9, "hello", "mello"];
+const items = [1, 5, 9, "hello", "mello"];
 console.log(items);

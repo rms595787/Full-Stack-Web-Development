@@ -21,4 +21,3 @@
 - second command
 - - node index.js
 - now our file will be executed
-

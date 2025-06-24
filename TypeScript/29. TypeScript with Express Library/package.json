@@ -1,0 +1,19 @@
+{
+  "name": "29.-typescript-with-express-library",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node '/Users/rahulsh9956/Documents/Coding/Full-Stack-Web-Development/TypeScript/29. TypeScript with Express Library/index.ts'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "- run these commands in your terminal",
+  "dependencies": {
+    "axios": "^1.10.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3"
+  }
+}

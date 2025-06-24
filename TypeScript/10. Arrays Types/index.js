@@ -1,3 +1,4 @@
+"use strict";
 /*
 Arrays Types
 Arrays are a type of object that can store multiple values of the "same data" type. Arrays in TypeScript are typed, which means you can specify the type of values that an array can hold.
@@ -9,19 +10,19 @@ Arrays are a type of object that can store multiple values of the "same data" ty
 
 */
 // brackets notation []
-var numbers = [1, 2, 3, 4];
+const numbers = [1, 2, 3, 4];
 console.log(numbers);
-var str = ["one", "two", "three"];
+const str = ["one", "two", "three"];
 console.log(str);
-var itemsN = [];
+const itemsN = [];
 itemsN.push(1);
 itemsN.push(2);
 itemsN.push(3);
 console.log(itemsN);
 // Array<type> notation
-var strM2 = ["one", "two", "three"];
+const strM2 = ["one", "two", "three"];
 console.log(strM2);
-var items = [];
+const items = [];
 items.push("keyword");
 items.push("reference");
 console.log(items);
