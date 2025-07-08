@@ -49,38 +49,3 @@ const App = () => {
 
 export default App;
 ```
-
-## NOTE
-
-We can only return one parent html tag from any component like div, section, etc.
-
-you can use as many tags you want inside one parent tag
-
-**Not to Do** - you can not use mulitple parent tags in return statement
-
-```tsx
-const App = () => {
-  return (
-    <div>
-      <WelcomeMessage />
-    </div>
-    <section></section>
-  );
-};
-
-export default App;
-```
-
-**To Do** - you can use multiple tags inside one parent tag
-
-```tsx
-const App = () => {
-  return (
-    <div>
-      <h1>Hello World!</h1>
-      <p>To Do</p>
-    </div>
-  );
-};
-export default App;
-```

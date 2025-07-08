@@ -27,9 +27,13 @@ In this exercise, you will learn how to create multiple components and render on
 ## Step 4: Render Components Inside App- jsx
 
 1. In your `App.jsx` file, import the `Header`,` MainContent`, and `Footer` components:
+
+```jsx
    import Header from `"./Header";`
    import MainContent from `"./MainContent";`
    import Footer from `"./Footer";`
+```
+
 2. Inside the `App`
    component's return statement, render the three components inside a single `<div>`, in the following order:
    - `Header`
@@ -38,14 +42,15 @@ In this exercise, you will learn how to create multiple components and render on
 
 Your `App.jsx` should look like this:
 
-```tsx
-function App {
-return
-‹div>
-<Header
-‹MainContent /
-<Footer /
-</ div>
-) ;
+```jsx
+function App() {
+   return (
+      ‹div>
+         <Header />
+         ‹MainContent />
+         <Footer /
+      </div>
+   );
+}
 export default App;
 ```
