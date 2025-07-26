@@ -1,0 +1,13 @@
+.cl {
+  margin-left: -1.5rem;
+}
+
+.cl input {
+  width: 8rem;
+}
+.color-title {
+  margin-top: 1rem;
+}
+.all {
+  background: linear-gradient(blue, crimson);
+}
