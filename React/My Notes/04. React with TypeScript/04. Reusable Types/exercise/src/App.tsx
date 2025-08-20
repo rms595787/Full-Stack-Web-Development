@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+import AdminInfo from "./components/AdminInfo";
+import UserInfo from "./components/UserInfo";
+import { type Info, type AdminInfoList } from "./types";
+const App = () => {
+  const user: Info = {
+    id: 1,
+    name: "Rahul",
+    email: "rahul@gmail.com",
+  };
+  const admin: AdminInfoList = {
+    id: 2,
+    name: "Huxn",
+    email: "huxn@gmail.com",
+    role: "admin",
+    lastLogin: new Date(),
+  };
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div>
+      <h1>User Info 👇🏻</h1>
+      {/* <UserInfo id={1} name="Rahul" email="rahul@gmail.com" /> */}
+      {/* 2nd way */}
+      <UserInfo user={user} />
 
-export default App
+      <h1>Admin Info 👇🏻</h1>
+      {/* <AdminInfo
+        id={10}
+        name="Rahul Shamra"
+        email="rs@gmail.com"
+        role="admin"
+        lastLogin={new Date()}
+        /> */}
+
+      {/* 2nd way */}
+      <AdminInfo admin={admin} />
+    </div>
+  );
+};
+
+export default App;

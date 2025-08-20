@@ -1,14 +1,9 @@
-import User from "./components/User";
+import MyComponent from "./component/MyComponent";
 
 const App = () => {
   return (
     <div>
-      <User name="rahul" age={20} isStudent={true} />
-
-      {/* Demonstrating use of Children as a props point 6 */}
-      {/* <User>
-        <p>Hello</p>
-      </User> */}
+      <MyComponent />
     </div>
   );
 };
