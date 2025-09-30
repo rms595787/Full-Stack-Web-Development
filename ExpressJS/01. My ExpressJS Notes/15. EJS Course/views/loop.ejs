@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+
+<body>
+    <h1>for loop</h1>
+    <% for(let i=1;i<=range;i++){ %>
+        <p>
+            <%= i %>
+        </p>
+        <% } %>
+
+            <h1>for in loop</h1>
+            <% const data=[1,2,3,4,5] %>
+                <% for(d in data) {%>
+                    <p>
+                        <%="Index: "+d +' value: ' +data[d] %>
+    </p>
+    <% } %>
+
+    <h1>Date Function in EJS</h1>
+    <%= new Date() %>
+</body>
+
+</html>
