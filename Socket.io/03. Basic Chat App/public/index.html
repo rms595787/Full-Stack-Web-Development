@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Chat App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Basic Chat App</h1>
+    <h2><b>Important:</b> Chat will be up for 1 min</h2>
+    <ul id="messages"></ul>
+
+    <form action="" id="form">
+        <input type="text" id="input" autocomplete="on">
+        <button type="submit">Send</button>
+    </form>
+
+    <!-- importing socket.io library in client/fronted -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        // 1. Select DOM Elements
+        const form = document.getElementById("form");
+        const input = document.getElementById("input");
+
+        // 2. Create instance of socket.io
+        const socket = io();
+        socket.on("connect", () => {
+            console.log("Connected to (client) ✅")
+
+            setTimeout(() => {
+                socket.disconnect();
+            }, 60000);
+        });
+
+        // 3. Attach Event Listener To The Form
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            if (input.value) {
+                // 4. Providing Data "To" The Server
+                socket.emit("chat message", input.value);
+                input.value = "";
+            }
+        })
+
+        // 5. Receiving/Getting Data "From" The Server
+        socket.on("chat message", (msg) => {
+            const item = document.createElement("li");
+            item.textContent = msg
+            document.getElementById("messages").appendChild(item);
+        })
+
+        // 6. Disconnecting server
+        socket.on("disconnect", () => console.log("Disconnected (client) ❌"))
+    </script>
+</body>
+
+</html>

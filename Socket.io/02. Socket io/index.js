@@ -52,14 +52,13 @@ io.on("connection", (socket) => {
   // Sending data from server side to client side
   // socket.emit("name of message","The message to deliever");
   // name of message -> could be anything, but should be same while sending and receiving
-  socket.emit("message","Welcome to the server!");
+  socket.emit("message", "Welcome to the server!");
 
   // Receiving data from client side
-  socket.on("new message",(m)=> console.log(m));
-
+  socket.on("new message", (m) => console.log(m));
 });
 // 5. Start the server
 
 const PORT = 3000;
 
-server.listen(3000, () => console.log(`Server up! running on port ${PORT}`));
+server.listen(PORT, () => console.log(`Server up! running on port ${PORT}`));
