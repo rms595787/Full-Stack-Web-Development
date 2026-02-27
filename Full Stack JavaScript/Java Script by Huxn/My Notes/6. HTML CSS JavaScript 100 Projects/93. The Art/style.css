@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap");
+/* font-family: "Open Sans", sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(144, 195, 200);
+  margin: 1rem;
+}
+
+.wrapper-container {
+  background-color: #ebeae9;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Nav Start */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 5rem;
+}
+
+nav ul {
+  margin-left: 5rem;
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav .burger {
+  margin-right: 5rem;
+  cursor: pointer;
+}
+
+nav .burger span {
+  height: 4px;
+  border: 2px solid black;
+  margin: 4px;
+  background: #000;
+}
+
+nav ul li a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+}
+/* Nav End */
+
+/* Header Start */
+header {
+  margin: 6rem;
+}
+
+.main-headings {
+  width: 50%;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.primary-headings {
+  width: 50%;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  line-height: 32px;
+  font-weight: 300;
+}
+
+.bg-gray {
+  background: rgb(97, 97, 97);
+  color: white;
+  padding: 0px 10px;
+  font-weight: bold;
+}
+/* Header End */
+
+/* Main Start */
+main {
+  margin: 0 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px;
+}
+
+main .img {
+  width: 40%;
+  margin: 10px;
+}
+
+/* Main End */
+
+/* Section Three Start */
+.section-three {
+  margin-left: 5rem;
+}
+
+.section-three .primary-headings {
+  margin-bottom: 10rem;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-three .item h1 {
+  font-size: 2rem;
+  color: rgb(97, 97, 97);
+}
+
+.section-three img {
+  width: 400px;
+  height: 500px;
+  margin: 50px;
+}
+
+/* Section Three End */
+
+/* Footer Start */
+footer {
+  margin-top: 10rem;
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  background: rgb(144, 195, 200);
+}
+
+footer .logo-container h1 {
+  font-size: 4rem;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 20px;
+}
+
+footer .logo-container p {
+  max-width: 400px;
+  font-family: sans-serif;
+  line-height: 25px;
+}
+
+footer .about-company {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .about-company .container {
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
+.about-company .container h1 {
+  margin-bottom: 50px;
+}
+
+.about-company .container p {
+  font-family: sans-serif;
+  margin-bottom: 20px;
+}
+
+/* Project End */
+/* Responsiveness */
+
+@media screen and (max-width: 740px) {
+  header .main-headings {
+    width: 100%;
+  }
+  header .primary-headings {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .section-three .main-headings {
+    width: 100%;
+  }
+  .section-three .primary-headings {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  footer .logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  footer .logo-container h1 {
+    font-size: 3rem;
+    margin-right: 2rem;
+  }
+}

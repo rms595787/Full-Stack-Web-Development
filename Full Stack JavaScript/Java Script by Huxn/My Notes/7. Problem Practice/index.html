@@ -1,0 +1,33 @@
+1st way to take input in js
+<script src="input.js"></script>
+
+<!-- 2nd way to take input in js -->
+<input type="text" id="takeInput">
+<button onclick="readValue()">Submit</button>
+
+<!-- 3rd way to take input in js -->
+<form id="formInput">
+    <input type="text" name="username">
+    <input type="email" name="email">
+    <input type="date" name="date">
+    <input type="tel" name="telephone">
+    <input type="password" name="password">
+    <button>send</button>
+</form>
+<script>
+    // 2nd way to take input in js
+    const readValue = () => {
+        let value = document.querySelector("#takeInput").value;
+        console.log(value);
+    }
+
+    document.querySelector("#formInput").addEventListener("submit", (e) => {
+        e.preventDefault();
+        let data = new FormData(e.target);
+        console.log(data.get("username"));
+        console.log(data.get("email"));
+        console.log(data.get("date"));
+        console.log(data.get("telephone"));
+        console.log(data.get("password"));
+    })
+</script>

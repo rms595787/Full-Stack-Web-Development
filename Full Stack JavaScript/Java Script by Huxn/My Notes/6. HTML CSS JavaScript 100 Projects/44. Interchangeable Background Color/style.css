@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(28, 28, 35);
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  border: 2px solid white;
+  width: 120px;
+  height: 100px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.purple {
+  background: purple;
+}
+.blue {
+  background: blue;
+}
+.red {
+  background: red;
+}
+.green {
+  background: green;
+}
+.yellow {
+  background: yellow;
+  color: black;
+}
+.teal {
+  background: teal;
+}

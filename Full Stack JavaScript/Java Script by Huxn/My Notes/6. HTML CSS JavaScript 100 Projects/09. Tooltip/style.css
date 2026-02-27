@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(#8bc6ec, #9599e2);
+}
+
+.container {
+  position: relative;
+  padding: 7px;
+  font-family: sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.tooltip-content {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  background: #000;
+  color: white;
+  white-space: nowrap;
+  padding: 10px 15px;
+  border-radius: 7px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.tooltip-content::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  border: 15px solid;
+  border-color: #000 #0000 #0000 #0000;
+  /* this property is responsible for getting triangluar shape of border*/
+  /* only top is black (#000) border and rest is transparent(#0000) and since border forms an 45deg angle it is causing a triangular shape */
+}
+
+.container:hover .tooltip-content{
+    top: -130%;
+    visibility: visible;
+    opacity: 1;
+}

@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: white;
+}
+
+/* JavaScript */
+.message {
+  text-align: center;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 50px;
+  left: 20%;
+  background-color: cornsilk;
+  border: 1px solid black;
+  font-size: 1.5em;
+  line-height: 100px;
+}
