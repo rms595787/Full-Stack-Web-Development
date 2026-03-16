@@ -79,6 +79,25 @@ main{
     width: 26rem;
 }
 
+.content-container button{
+    border: none;
+    border: 2px solid #ff6e00;
+    border-radius: 5px;
+    background: #ff6e00;
+    color: #fff;
+    padding: 10px 20px;
+    transition: all 0.5s;
+}
+
+.content-container button:hover{
+    border: none;
+    border: 2px solid #ff6e00;
+    border-radius: 5px;
+    background: transparent;
+    color: black;
+    padding: 10px 20px;
+}
+
 .img{
     transform: translateX(-120px);
     margin-top: 1rem;

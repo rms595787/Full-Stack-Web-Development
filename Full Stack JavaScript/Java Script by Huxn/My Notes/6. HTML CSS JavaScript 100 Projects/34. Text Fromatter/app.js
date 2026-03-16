@@ -28,11 +28,11 @@ buttons.forEach((btn) => {
         outputField.innerHTML.charAt(0).toUpperCase() +
         outputField.innerHTML.slice(1).toLowerCase();
     } else if (btn.classList.contains("bold")) {
-      outputField.classList.add("bold");
+      outputField.classList.toggle("bold");
     } else if (btn.classList.contains("italic")) {
-      outputField.classList.add("italic");
+      outputField.classList.toggle("italic");
     } else {
-      outputField.classList.add("underline");
+      outputField.classList.toggle("underline");
     }
   });
 });

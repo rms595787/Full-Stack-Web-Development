@@ -21,7 +21,7 @@ const ToggleBackgroundColor = () => {
           border: `2px solid ${textColor}`,
         }}
       >
-        {backgroundColor === "#1b1b1b" ? "BlackTheme" : "White Theme"}
+        {backgroundColor === "#1b1b1b" ? "White Theme" :  "BlackTheme"}
       </button>
       <section className="content">
         <h1>

@@ -1,0 +1,58 @@
+# 🚀 Project 51
+
+> Creating interactive effects using CSS pseudo elements and cursor tracking.  
+> Built as part of my 100 Projects Challenge.
+
+---
+
+## 🎥 Demo Video
+
+🔗 Watch here:
+[Video](./demo/Project%2051.mov)  
+<video src="./demo/Project 51.mov" controls width="800"></video>
+
+---
+
+## 🛠️ Tech Stack
+
+[![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+---
+
+## 🧠 What I Learned
+
+CSS can be surprisingly powerful. In this project I explored how **pseudo elements like `::before` and `::after`** can be used to build shapes and even **emoji-style graphics entirely with CSS**.
+
+The most exciting part was creating an effect where **eyes follow the user's cursor**.
+
+To achieve this, I used:
+
+- `getBoundingClientRect()` to calculate element position
+- `pageX` and `pageY` to track cursor movement
+- `Math.atan2()` to calculate rotation angles
+
+By combining DOM measurements with basic trigonometry, the eyes dynamically rotate toward the cursor, creating a fun interactive experience.
+
+This shows how combining **CSS creativity with JavaScript math** can create surprisingly engaging UI effects.
+
+---
+
+## 🔗 Connect With Me
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/rahul-sharma-94960a248/)
+
+---
+
+---
+
+## 📢 LinkedIn Post
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/feed/update/urn:li:activity:7434092659713118208/?originTrackingId=FJn1v2khMgr0ZvCaV4xfUg%3D%3D)
+
+---
+
+⭐ If you found this helpful, consider giving it a star!
+
+---

@@ -27,5 +27,8 @@ btn.addEventListener("click", function (e) {
     newRow.appendChild(newYear);
 
     booklist.appendChild(newRow);
+    title.value = "";
+    author.value = "";
+    year.value = "";
   }
 });

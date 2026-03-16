@@ -7,7 +7,8 @@ getData();
 filter.addEventListener("input", (e) => filterData(e.target.value));
 
 async function getData() {
-  const res = await fetch("https://randomuser.me/api?results=50");
+  // const res = await fetch("https://randomuser.me/api?results=50");
+  const res = await fetch("https://randomuser.me/api/0.8/?results=50"); // old version
   const { results } = await res.json();
 
   result.innerHTML = "";
@@ -17,10 +18,10 @@ async function getData() {
     listItems.push(li);
 
     li.innerHTML = `
-        <img src="${user.picture.large}" alt="${user.name.first}"/>
-        <div class="user-info">
-            <h4>${user.name.first} ${user.name.last}</h4>
-            <p>${user.location.city}, ${user.location.country}</p>
+        <img src="${user.user.picture.large}" alt="${user.user.name.first}"/>
+        <div class="user.user-info">
+            <h4>${user.user.name.first} ${user.user.name.last}</h4>
+            <p>${user.user.location.city}, ${user.user.location.state}</p>
         </div>
     `;
 
